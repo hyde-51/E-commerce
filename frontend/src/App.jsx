@@ -61,7 +61,9 @@ function App() {
         <Route path='/order' element={userData ? <Order/> : <Navigate to={"/login"} state={{from:location.pathname}}/>}/>
 
         <Route path='/verify' element={userData ? <Verify/> : <Navigate to={"/login"} state={{from:location.pathname}}/>}/>
+        
       </Routes>
+      
       <Ai/>
     </>
   )
